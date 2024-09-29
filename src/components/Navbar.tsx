@@ -1,12 +1,10 @@
+import { Button } from "./ui/button";
+
 export default function Navbar() {
   return (
-    <nav className="w-1/2 md:w-full px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
+    <nav className="w-full px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8">
       <div className="flex items-center justify-between">
-        <a
-          className="flex-none text-xl font-semibold text-black focus:outline-none focus:opacity-80"
-          href="#"
-          aria-label="Brand"
-        >
+        <a className="flex-none text-xl font-semibold text-black" href="#">
           Brand
         </a>
         <div className="sm:hidden">
@@ -60,31 +58,31 @@ export default function Navbar() {
         aria-labelledby="hs-navbar-cover-page-collapse"
       >
         <div className="flex flex-col gap-5 mt-5 sm:flex-row sm:items-center sm:justify-end sm:mt-0 sm:ps-5">
-          <a
+          <Button
             className="font-medium text-black focus:outline-none"
-            href="#"
+            variant="ghost"
             aria-current="page"
           >
             Landing
-          </a>
-          <a
+          </Button>
+          <Button
             className="font-medium text-black/70 hover:text-black focus:outline-none focus:text-black"
-            href="#"
+            variant="ghost"
           >
             Account
-          </a>
-          <a
+          </Button>
+          <Button
             className="font-medium text-black/70 hover:text-black focus:outline-none focus:text-black"
-            href="#"
+            variant="ghost"
           >
             Work
-          </a>
-          <a
+          </Button>
+          <Button
             className="font-medium text-black/70 hover:text-black focus:outline-none focus:text-black"
-            href="#"
+            variant="ghost"
           >
             Blog
-          </a>
+          </Button>
         </div>
       </div>
     </nav>
